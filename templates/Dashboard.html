@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+<center>
+    <h1>welcome to dashboard</h1>
+    <p>{{ msg }}</p>
+    User: {{ session["FullName"] }}
+
+    <a href="{{url_for('logout') }}"> <button>Click Here for Logout</button></a>
+</center>
+</body>
+</html>

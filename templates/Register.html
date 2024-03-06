@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register page</title>
+</head>
+<body>
+<center>
+    <h1>Welcome to Registration Page</h1>
+    <p>{{ msg }}</p>
+    <form action="/register" method="POST">
+    <table border="1">
+        <tr>
+            <th>UserId</th> <td>  <input type="number" name="uid" placeholder="User Id"> </td>
+        </tr>
+        <tr>
+            <th>Password</th> <td>  <input type="password" name="pass" placeholder="Password"> </td>
+        </tr>
+        <tr>
+            <th>FullName</th> <td>  <input type="text" name="name" placeholder="Full Name"> </td>
+        </tr>
+        <tr>
+            <th>Email</th> <td>  <input type="email" name="email" placeholder="Email"> </td>
+        </tr>
+
+        <tr>
+            <th>PhoneNo</th> <td>  <input type="number" name="phno" placeholder="Phone no"> </td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>
+                <input type="radio" name="gn" value="Male"> Male
+                <input type="radio" name="gn" value="Female"> Female
+            </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2">  <input type="submit"  value="Register"> </td>
+        </tr>
+    </table>
+    </form>
+</center>
+</body>
+</html>

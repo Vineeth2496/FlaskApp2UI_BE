@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<center>
+    <h1>Welocme to Login Page</h1>
+    <h3>{{ msg }}</h3>
+    <form action="{{ url_for('login') }}" method="POST">
+    <table border="1">
+        <tr>
+            <th>UserId</th> <td>  <input type="number" name="uid" placeholder="User Id"> </td>
+        </tr>
+        <tr>
+            <th>Password</th> <td>  <input type="password" name="pass" placeholder="Password"> </td>
+        </tr>
+        <tr align="center">
+            <td colspan="2"> <input type="submit" value="Login"> </td>
+        </tr>
+    </table>
+    </form>
+</center>
+</body>
+</html>
